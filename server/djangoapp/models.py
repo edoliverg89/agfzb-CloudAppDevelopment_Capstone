@@ -15,8 +15,6 @@ class CarMake(models.Model):
         return self.name
 
 # Car Model model
-
-
 class CarModel(models.Model):
     make = models.ForeignKey(CarMake, null=True, on_delete=models.CASCADE) 
     name = models.CharField(null=False, max_length=50)
